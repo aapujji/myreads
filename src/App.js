@@ -7,7 +7,6 @@ import './App.css'
 
 class BooksApp extends React.Component {
 	state = {
-		showSearchPage: false,
 		query: '',
 		books: [],
 		bookshelves: [
@@ -54,7 +53,7 @@ class BooksApp extends React.Component {
 	}
 
 	render() {
-		const { showSearchPage, query, books, bookshelves } = this.state;
+		const { query, books, bookshelves } = this.state;
 
 		const filterBooks = query === '' 
 			? books

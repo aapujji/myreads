@@ -8,7 +8,6 @@ class Book extends React.Component {
 	render() {
 		const { value } = this.state;
 		const { book, updateShelf } = this.props;
-		console.log(book);
 
 		return (
 			<li>
