@@ -15,7 +15,8 @@ class Book extends React.Component {
 	}
 
 	render() {
-		const { book, shelf, updateShelf } = this.props;
+		const { value } = this.state;
+		const { book, updateShelf } = this.props;
 
 		if (!book.imageLinks) {
 			book.imageLinks = 'https://via.placeholder.com/128x170/ff7f7f/333333?text=NoImage';

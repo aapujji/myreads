@@ -44,7 +44,7 @@ class BookSearch extends React.Component {
 	}
 
 	render() {
-		const { booksSaved, updateShelf } = this.props;
+		const { updateShelf } = this.props;
 		const { query, error, filteredBooks } = this.state;
 
 		return (
