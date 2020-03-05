@@ -22,13 +22,13 @@ class BookSearch extends React.Component {
 		} else {
 			BooksAPI.search(query)
 				.then(results => {
-					results.map((result) => {
+					for (const result of results) {
 						for (const bookSaved of this.props.booksSaved) {
 							if (result.id === bookSaved.id) {
 								result.shelf = bookSaved.shelf
 							}
 						}
-					})
+					}
 					this.setState({
 						filteredBooks: results,
 						error: false
